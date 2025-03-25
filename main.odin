@@ -47,5 +47,5 @@ main :: proc() {
 
 	password_length := 16
 	password := generate_password(master_password, site, username, password_length)
-	fmt.printf("Generated password for %s (%s): %s\n", site, username, password)
+	fmt.printf("Generated password for %s (%s):\n%s\n", site, username, password)
 }
