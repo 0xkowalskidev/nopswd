@@ -19,7 +19,7 @@ main :: proc() {
 	}
 
 	site := strings.to_lower(args[0])
-	username := args[1] // Username/email can be case sensitive
+	username := strings.to_lower(args[1])
 	master_password := strings.join(args[2:], " ")
 
 	// Append piped input if present
